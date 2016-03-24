@@ -12,7 +12,7 @@ export class HomeView extends React.Component {
   }
 
   componentWillMount () {
-    this.props.socketConnect('00:1B:DC:00:C0:06');
+    this.props.socketConnect('test');
   }
 
   componentWillReceiveProps (nextProps) {
@@ -39,7 +39,7 @@ export class HomeView extends React.Component {
               <div className="counter" style={{
                 WebkitTransform: `scale(${x})`,
                 transform: `scale(${x})`
-              }}>{button.cache}</div>
+              }}>{button.count}</div>
             }
           </Motion>
         </div>

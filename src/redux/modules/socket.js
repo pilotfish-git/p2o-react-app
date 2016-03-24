@@ -120,12 +120,12 @@ export default function socketReducer(state = initialState, action) {
       if (!button) {
         button = {
           id: action.payload,
-          cache: 0,
+          count: 0,
           history: []
         };
       }
       button.history.push((new Date()).toString());
-      button.cache += 1;
+      button.count += 1;
 
       return {
         ...state,
