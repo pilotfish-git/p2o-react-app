@@ -1,14 +1,24 @@
-.counter {
-  font-weight: bold;
-}
+.homeView{
+  margin: 0 auto;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
-.counter--green {
-  composes: counter;
-  color: rgb(25,200,25);
-}
+  .header{
+    text-align: center;
+    margin-top: 24px;
+  }
 
-.duck {
-  display: block;
-  width: 100%;
-  margin-top: 1.5rem;
+  .counterContainer{
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }

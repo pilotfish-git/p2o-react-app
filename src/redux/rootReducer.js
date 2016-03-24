@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux'
-import { routerReducer as router } from 'react-router-redux'
-import counter from './modules/counter'
+import { combineReducers } from 'redux';
+import { routerReducer as router } from 'react-router-redux';
+import socket from './modules/socket';
 
 export default combineReducers({
-  counter,
-  router
-})
+  router,
+  socket
+});

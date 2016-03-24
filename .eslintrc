@@ -19,8 +19,20 @@
     "__BASENAME__" : false
   },
   "rules": {
-    "semi" : [2, "never"],
-    "max-len": [2, 120, 2],
+    "semi" : [2, "always"],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "space-before-function-paren": 0,
+    "spaced-comment": 0,
+    "quotes": [2, "single"],
+    "jsx-quotes": [0],
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "react/jsx-boolean-value": 0,
+    "react/prop-types": 0,
+    "react/self-closing-comp": 0,
+    "operator-linebreak": 0,
+
     "flow-vars/define-flow-type": 1,
     "flow-vars/use-flow-type": 1
   }
