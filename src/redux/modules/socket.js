@@ -29,7 +29,7 @@ export function socketConnect(id) {
   return (dispatch) => {
     dispatch((() => ({type: CONNECTING}))());
 
-    let socket = io.connect('http://p2o.pilotfish-demo-portal.eu:3001');
+    let socket = io.connect('http://pilotfish-demo-portal.eu:3001');
 
     socket.on('connection-response', (data) => {
       if (data.status === 'success') {

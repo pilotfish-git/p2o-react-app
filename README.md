@@ -9,7 +9,7 @@ To setup the web socket connection, this project uses the [socket.io](http://soc
 The Pilotfish websocket endpoint runs at `http://p2o.pilotfish-demo-portal.eu:3001`. You can connect to this endpoint with:
 
 ```javascript
-let socket = io.connect('http://p2o.pilotfish-demo-portal.eu:3001');
+let socket = io.connect('http://pilotfish-demo-portal.eu:3001');
 ```
 
 The Pilotfish websocket API is pretty simple. When having connected you will be able to listen
@@ -60,3 +60,5 @@ socket.on('button-press', (id) => {
 ```
 
 When a button is pressed when connected, the server will emit `button-press` with the `id` of the button as payload.
+
+If you want to use a dummy button to test your app go to [http://pilotfish-demo-portal.eu/button](http://pilotfish-demo-portal.eu/button)
